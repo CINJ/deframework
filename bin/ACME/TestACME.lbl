@@ -1,0 +1,4 @@
+al C:0007 .WoobleImm2
+al C:0005 .WoobleImm
+al C:0404 .WoobleAddrPC
+al C:0006 .WoobleAddr

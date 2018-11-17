@@ -1,0 +1,4 @@
+#!/bin/bash
+java -jar /home/cinj/Applications/KickAss/KickAss.jar $1 
+
+
