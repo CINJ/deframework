@@ -1,0 +1,145 @@
+Modules list:
+-------------
+loader-nonreloc-c64.o:
+    CODE              Offs=000000  Size=000000  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=000000  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=000000  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=000000  Align=00001  Fill=0000
+    ZEROPAGE          Offs=000000  Size=000000  Align=00001  Fill=0000
+    NULL              Offs=000000  Size=000000  Align=00001  Fill=0000
+    DISKIO_ZP         Offs=000000  Size=000016  Align=00001  Fill=0000
+    DISKIO            Offs=000000  Size=00050E  Align=00001  Fill=0000
+install-nonreloc-c64.o:
+    CODE              Offs=000000  Size=000000  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=000000  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=000000  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=000000  Align=00001  Fill=0000
+    ZEROPAGE          Offs=000000  Size=000000  Align=00001  Fill=0000
+    NULL              Offs=000000  Size=000000  Align=00001  Fill=0000
+    HEADER            Offs=000000  Size=000000  Align=00001  Fill=0000
+    EXTZP             Offs=000000  Size=000000  Align=00001  Fill=0000
+    DISKIO_INSTALL    Offs=000000  Size=001865  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+BSS                   000000  000000  000000  00001
+CODE                  000000  000000  000000  00001
+DATA                  000000  000000  000000  00001
+EXTZP                 000000  000000  000000  00001
+HEADER                000000  000000  000000  00001
+NULL                  000000  000000  000000  00001
+RODATA                000000  000000  000000  00001
+ZEROPAGE              000000  000000  000000  00001
+DISKIO_ZP             0000C0  0000D5  000016  00001
+DISKIO                001FFE  00250B  00050E  00001
+DISKIO_INSTALL        007FFE  009862  001865  00001
+
+
+Exports list:
+-------------
+BLOCKDESTLO               0000CA RLZ    BLOCKINDEX                0000CB  LZ    
+DECOMPVARS                0000CC  LZ    DIRBUFFSIZE41             000009  EZ    
+DIRBUFFSIZE71             000009  EZ    DIRBUFFSIZE81             0000B3  EZ    
+GETBYTE_CLOCK_ATN_HI      0000C9  LZ    LOADDESTPTR               0000D4  LZ    
+LOADXBUF                  0000C4  LZ    LOADYBUF                  0000C5  LZ    
+NEXTSTREAMBLKIDX          0000C7  LZ    STREAMBLKIDX              0000C8  LZ    
+YPNTRBUF                  0000C6  LZ    c1570fix0                 000720 RLA    
+c1570fix1                 0002BF RLA    cmdfdfix0                 00044C RLA    
+cmdfdfix1                 0004B5 REA    cmdfdfix2                 0004B6 REA    
+config_DECOMPRESSOR       000003  EZ    config_DIRTRACK           000012  EZ    
+config_DISABLE_WATCHDOG   000001  EZ    config_END_ADDRESS_API    000000  EZ    
+config_FILENAME_MAXLENGTH 000010  EZ    config_IDLE_BUS_LOCK      000000  EZ    
+config_LC_SPEED           000006  EZ    config_LOAD_COMPD_API     000001  EZ    
+config_LOAD_RAW_API       000001  EZ    config_LOAD_TO_API        000000  EZ    
+config_LOAD_UNDER_D000_DFFF 000001  EZ    config_LOAD_VIA_KERNAL_FALLBACK 000001  EZ    
+config_MEM_DECOMP_API     000000  EZ    config_MEM_DECOMP_TO_API  000000  EZ    
+config_NTSC_COMPATIBILITY 000000  EZ    config_ONLY_1541_AND_COMPATIBLE 000000  EZ    
+config_UNINSTALL_API      000000  EZ    dcodinit41                000720  LA    
+dcodinit71                0006FF  LA    dcodinit81                000311  LA    
+decdesthi                 0000C3  LZ    decdestlo                 0000C2  LZ    
+decrunch                  002373  LA    drivecode41               008000  LA    
+drivecode71               0087DD  LA    drivecode81               008F72  LA    
+drvcodebeg41              00003F  LA    drvcodebeg71              000036  LA    
+drvcodebeg81              000300  LA    drvcodeend41              0007CE  LA    
+drvcodeend71              00077E  LA    drvcodeend81              000631  LA    
+install                   0092E7  LA    loadaddrhi                0000C1  LZ    
+loadaddrlo                0000C0  LZ    loadcompd                 00200D  LA    
+loadcompdexecute          002013  LA    loadcompdopen             00204F  LA    
+loader_zp_first           0000C0  EZ    loader_zp_last            0000D5  EZ    
+loadraw                   002000  LA    openfile                  00204F  LA    
+pollblock                 00212F  LA    
+
+
+Imports list:
+-------------
+BLOCKDESTLO (loader-nonreloc-c64.o):
+    install-nonreloc-c64.o    install.s(27)
+BLOCKINDEX (loader-nonreloc-c64.o):
+DECOMPVARS (loader-nonreloc-c64.o):
+DIRBUFFSIZE41 (install-nonreloc-c64.o):
+DIRBUFFSIZE71 (install-nonreloc-c64.o):
+DIRBUFFSIZE81 (install-nonreloc-c64.o):
+GETBYTE_CLOCK_ATN_HI (loader-nonreloc-c64.o):
+LOADDESTPTR (loader-nonreloc-c64.o):
+LOADXBUF (loader-nonreloc-c64.o):
+LOADYBUF (loader-nonreloc-c64.o):
+NEXTSTREAMBLKIDX (loader-nonreloc-c64.o):
+STREAMBLKIDX (loader-nonreloc-c64.o):
+YPNTRBUF (loader-nonreloc-c64.o):
+c1570fix0 (install-nonreloc-c64.o):
+    install-nonreloc-c64.o    install.s(31)
+c1570fix1 (install-nonreloc-c64.o):
+    install-nonreloc-c64.o    install.s(32)
+cmdfdfix0 (install-nonreloc-c64.o):
+    install-nonreloc-c64.o    install.s(34)
+cmdfdfix1 (install-nonreloc-c64.o):
+    install-nonreloc-c64.o    install.s(35)
+cmdfdfix2 (install-nonreloc-c64.o):
+    install-nonreloc-c64.o    install.s(36)
+config_DECOMPRESSOR (install-nonreloc-c64.o):
+config_DIRTRACK (install-nonreloc-c64.o):
+config_DISABLE_WATCHDOG (install-nonreloc-c64.o):
+config_END_ADDRESS_API (install-nonreloc-c64.o):
+config_FILENAME_MAXLENGTH (install-nonreloc-c64.o):
+config_IDLE_BUS_LOCK (install-nonreloc-c64.o):
+config_LC_SPEED (install-nonreloc-c64.o):
+config_LOAD_COMPD_API (install-nonreloc-c64.o):
+config_LOAD_RAW_API (install-nonreloc-c64.o):
+config_LOAD_TO_API (install-nonreloc-c64.o):
+config_LOAD_UNDER_D000_DFFF (install-nonreloc-c64.o):
+config_LOAD_VIA_KERNAL_FALLBACK (install-nonreloc-c64.o):
+config_MEM_DECOMP_API (install-nonreloc-c64.o):
+config_MEM_DECOMP_TO_API (install-nonreloc-c64.o):
+config_NTSC_COMPATIBILITY (install-nonreloc-c64.o):
+config_ONLY_1541_AND_COMPATIBLE (install-nonreloc-c64.o):
+config_UNINSTALL_API (install-nonreloc-c64.o):
+dcodinit41 (install-nonreloc-c64.o):
+dcodinit71 (install-nonreloc-c64.o):
+dcodinit81 (install-nonreloc-c64.o):
+decdesthi (loader-nonreloc-c64.o):
+decdestlo (loader-nonreloc-c64.o):
+decrunch (loader-nonreloc-c64.o):
+drivecode41 (install-nonreloc-c64.o):
+drivecode71 (install-nonreloc-c64.o):
+drivecode81 (install-nonreloc-c64.o):
+drvcodebeg41 (install-nonreloc-c64.o):
+drvcodebeg71 (install-nonreloc-c64.o):
+drvcodebeg81 (install-nonreloc-c64.o):
+drvcodeend41 (install-nonreloc-c64.o):
+drvcodeend71 (install-nonreloc-c64.o):
+drvcodeend81 (install-nonreloc-c64.o):
+install (install-nonreloc-c64.o):
+loadaddrhi (loader-nonreloc-c64.o):
+loadaddrlo (loader-nonreloc-c64.o):
+loadcompd (loader-nonreloc-c64.o):
+loadcompdexecute (loader-nonreloc-c64.o):
+loadcompdopen (loader-nonreloc-c64.o):
+loader_zp_first (loader-nonreloc-c64.o):
+loader_zp_last (loader-nonreloc-c64.o):
+loadraw (loader-nonreloc-c64.o):
+openfile (loader-nonreloc-c64.o):
+pollblock (loader-nonreloc-c64.o):
+

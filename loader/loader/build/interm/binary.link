@@ -1,0 +1,13 @@
+MEMORY
+{
+ ZPRAM: start = $c0, size = $40;
+ INSTALLRAM: start = $7ffe, size = $8002, file = "../build/install-c64.prg";
+ RESIDENTRAM: start = $1ffe, size = $e002, file = "../build/loader-c64.prg";
+}
+
+SEGMENTS
+{
+ DISKIO_ZP: load = ZPRAM, type = zp;
+ DISKIO: load = RESIDENTRAM;
+ DISKIO_INSTALL: load = INSTALLRAM;
+}
